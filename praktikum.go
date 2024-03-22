@@ -30,7 +30,7 @@ func InsertOneDoc(db string, collection string, doc interface{}) (insertedID int
 	return insertResult.InsertedID
 }
 
-func InsertPresensi(long float64,lat float64, lokasi string, phonenumber string, checkin string, biodata Karyawan) (InsertedID interface{}) {
+func InsertPresensi(long float64, lat float64, lokasi string, phonenumber string, checkin string, biodata Karyawan) (InsertedID interface{}) {
 	var presensi Presensi
 	presensi.Latitude = long
 	presensi.Longitude = lat
@@ -65,3 +65,5 @@ func GetAllPresensi() (data []Presensi) {
 	}
 	return
 }
+
+//TEST GET
